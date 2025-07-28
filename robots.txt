@@ -1,0 +1,7 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://funcnroll.dev/sitemap.xml
+
+
