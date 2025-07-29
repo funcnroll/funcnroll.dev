@@ -9,7 +9,7 @@ function About() {
       <div className="space-y-4 sm:text-center">
         <GeneralParagraph>
           I'm a front-end developer with 2 years of experience who prefers clean
-          code and design, and building things that just work
+          code and design, and building things that just work.
         </GeneralParagraph>
         <GeneralParagraph>
           I enjoy working collaboratively, supporting others, and sharing what I
@@ -17,7 +17,7 @@ function About() {
         </GeneralParagraph>
         <GeneralParagraph>
           Skills: React, Tailwind, TypeScript, JavaScript (+ HTML & CSS), Vite
-          and Figma
+          and Figma.
         </GeneralParagraph>
       </div>
     </Section>
