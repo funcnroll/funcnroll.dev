@@ -9,7 +9,7 @@ function About() {
       <div className="space-y-4 sm:text-center">
         <GeneralParagraph>
           I'm a 17 year old front-end developer with 2 years of experience who
-          prefers clean code and design, and building things that just work.
+          prefers clean code, design, and building things that just work.
         </GeneralParagraph>
         <GeneralParagraph>
           I enjoy working collaboratively, supporting others, and sharing what I
