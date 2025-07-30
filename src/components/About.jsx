@@ -8,8 +8,8 @@ function About() {
       <Header>About</Header>
       <div className="space-y-4 sm:text-center">
         <GeneralParagraph>
-          I'm a front-end developer with 2 years of experience who prefers clean
-          code and design, and building things that just work.
+          I'm a 17 year old front-end developer with 2 years of experience who
+          prefers clean code and design, and building things that just work.
         </GeneralParagraph>
         <GeneralParagraph>
           I enjoy working collaboratively, supporting others, and sharing what I
