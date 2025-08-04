@@ -3,9 +3,8 @@ import Section from "../components/reusable/Section";
 
 import GetInTouchLinks from "../components/reusable/GetInTouchLinks";
 import GeneralLink from "../components/reusable/GeneralLink";
-import { Github, Mail } from "lucide-react";
-
-<Mail />;
+import { Mail } from "lucide-react";
+import { GithubIcon, XIcon } from "./reusable/BrandIcons";
 
 function GetInTouch() {
   // basic anti scrape for email
@@ -22,8 +21,16 @@ function GetInTouch() {
           <GetInTouchLinks
             to="https://github.com/funcnroll"
             // icon={<FaGithub size={32} />}
-            icon={<Github size={32} />}
+            icon={<GithubIcon size={32} />}
             text="funcnroll"
+          />
+        </div>
+        <div>
+          <GetInTouchLinks
+            to="https://x.com/funcnroll"
+            // icon={<FaGithub size={32} />}
+            icon={<XIcon size={32} />}
+            text="@funcnroll"
           />
         </div>
         <GetInTouchLinks
