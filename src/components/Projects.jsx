@@ -28,6 +28,25 @@ function Project() {
           type="page"
         />
         <ProjectCard
+          img="/repnote.png"
+          title="Repnote"
+          tags={[
+            {
+              name: "React",
+              textColor: "text-blue-400",
+            },
+            {
+              name: "Redux",
+              textColor: "text-sky-500/90",
+            },
+            {
+              name: "Work in Progress",
+              textColor: "text-indigo-400",
+            },
+          ]}
+          to="https://github.com/funcnroll/repnote"
+        />
+        <ProjectCard
           img="/weatherapp.png"
           title="Weather App"
           tags={[
