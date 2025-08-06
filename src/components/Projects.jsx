@@ -6,7 +6,8 @@ function Project() {
   return (
     <Section>
       <Header>Projects</Header>
-      <div className="flex flex-col flex-wrap gap-4 sm:flex-row">
+      {/* <div className="flex flex-col flex-wrap gap-4 sm:flex-row"> */}
+      <div className="grid grid-cols-3 gap-2 sm:flex-row">
         <ProjectCard
           img="/pinselspur.png"
           title="Pinselspur"
