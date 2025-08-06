@@ -16,8 +16,8 @@ function About() {
           learn along the way.
         </GeneralParagraph>
         <GeneralParagraph>
-          Skills: React, Tailwind, TypeScript, JavaScript (+ HTML & CSS), Vite
-          and Figma.
+          Skills: React, Redux, Tailwind, TypeScript, JavaScript (+ HTML & CSS),
+          Nginx and Linux
         </GeneralParagraph>
       </div>
     </Section>
