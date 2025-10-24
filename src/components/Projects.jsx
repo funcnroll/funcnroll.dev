@@ -8,6 +8,16 @@ function Project() {
       <Header>Projects</Header>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 ">
         <ProjectCard
+          img="/repnote.png"
+          title="Repnote"
+          tags={[
+            { name: "React", textColor: "text-blue-400" },
+            { name: "Redux Toolkit", textColor: "text-sky-500/90" },
+            { name: "Data Visualization", textColor: "text-indigo-300" },
+          ]}
+          to="https://github.com/funcnroll/repnote"
+        />
+        <ProjectCard
           img="/pinselspur.png"
           title="Pinselspur"
           tags={[
@@ -27,25 +37,7 @@ function Project() {
           to="/pinselspur"
           type="page"
         />
-        <ProjectCard
-          img="/repnote.png"
-          title="Repnote"
-          tags={[
-            {
-              name: "React",
-              textColor: "text-blue-400",
-            },
-            {
-              name: "Redux",
-              textColor: "text-sky-500/90",
-            },
-            {
-              name: "Work in Progress",
-              textColor: "text-indigo-400",
-            },
-          ]}
-          to="https://github.com/funcnroll/repnote"
-        />
+
         <ProjectCard
           img="/weatherapp.png"
           title="Weather App"

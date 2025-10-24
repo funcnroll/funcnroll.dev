@@ -20,7 +20,6 @@ function GetInTouch() {
         <div>
           <GetInTouchLinks
             to="https://github.com/funcnroll"
-            // icon={<FaGithub size={32} />}
             icon={<GithubIcon size={32} />}
             text="funcnroll"
           />
@@ -28,7 +27,6 @@ function GetInTouch() {
         <div>
           <GetInTouchLinks
             to="https://x.com/funcnroll"
-            // icon={<FaGithub size={32} />}
             icon={<XIcon size={32} />}
             text="@funcnroll"
           />

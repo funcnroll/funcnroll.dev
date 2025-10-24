@@ -1,7 +1,14 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function ProjectCard({ img, title, tags, to = "", type = "github" }) {
+function ProjectCard({
+  img,
+  title,
+  tags,
+  to = "",
+  type = "github",
+  imageCover = "object-cover",
+}) {
   return type === "github" ? (
     <a
       href={to}
@@ -13,6 +20,7 @@ function ProjectCard({ img, title, tags, to = "", type = "github" }) {
         img={img}
         title={title}
         tags={tags}
+        imageCover={imageCover}
       />
     </a>
   ) : (
@@ -24,19 +32,20 @@ function ProjectCard({ img, title, tags, to = "", type = "github" }) {
         img={img}
         title={title}
         tags={tags}
+        imageCover={imageCover}
       />
     </Link>
   );
 }
 
-function CardContent({ img, title, tags }) {
+function CardContent({ img, title, tags, imageCover = "object-cover" }) {
   return (
     <>
       <div className="overflow-hidden rounded">
         <img
           src={img}
           alt={title}
-          className="object-cover w-full rounded h-36"
+          className={`${imageCover} w-full rounded h-36`}
         />
       </div>
 
@@ -49,7 +58,7 @@ function CardContent({ img, title, tags }) {
         {tags.map((tag, i) => (
           <p
             key={i}
-            className={`${tag.textColor} bg-zinc-800/60 p-2 rounded-xl  font-light md:font-base`}
+            className={`${tag.textColor} bg-zinc-800/60 p-2 rounded-xl font-light md:font-base`}
           >
             {tag.name}
           </p>
