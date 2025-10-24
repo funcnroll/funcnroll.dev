@@ -18,7 +18,7 @@ function Project() {
           to="https://github.com/funcnroll/repnote"
         />
         <ProjectCard
-          img="/pinselspur.png"
+          img="/pinselspur.jpg"
           title="Pinselspur"
           tags={[
             {
