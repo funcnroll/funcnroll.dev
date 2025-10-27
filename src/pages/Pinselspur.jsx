@@ -121,8 +121,7 @@ function Pinselspur() {
           </ProjectParagraph>
         </ProjectCenter>
 
-        {/* its not 100% centered visually but its good enough */}
-        <ProjectCenter extraClass="flex flex-col items-center justify-center">
+        <ProjectCenter>
           <ProjectH3>Technology Stack</ProjectH3>
           <ProjectUl>
             {techStack.map((item) => (
@@ -136,7 +135,7 @@ function Pinselspur() {
           </ProjectUl>
         </ProjectCenter>
 
-        <ProjectCenter extraClass="flex flex-col items-center justify-center">
+        <ProjectCenter>
           <ProjectH3>Highlights</ProjectH3>
           <ProjectUl>
             <ProjectLi icon="check">DRY structure via components</ProjectLi>

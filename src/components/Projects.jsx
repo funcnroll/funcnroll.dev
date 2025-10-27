@@ -15,7 +15,8 @@ function Project() {
             { name: "Redux Toolkit", textColor: "text-sky-500/90" },
             { name: "Data Visualization", textColor: "text-indigo-300" },
           ]}
-          to="https://github.com/funcnroll/repnote"
+          to="/repnote"
+          type="page"
         />
         <ProjectCard
           img="/pinselspur.jpg"

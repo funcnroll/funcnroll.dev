@@ -1,6 +1,10 @@
 function ProjectCenter({ children, extraClass = "" }) {
   return (
-    <div className={`items-center text-center ${extraClass}`}>{children}</div>
+    <div
+      className={`flex flex-col items-center justify-center text-center ${extraClass}`}
+    >
+      {children}
+    </div>
   );
 }
 

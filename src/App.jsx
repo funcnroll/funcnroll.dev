@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { lazy, Suspense } from "react";
+import Repnote from "./pages/Repnote";
 
 const Pinselspur = lazy(() => import("./pages/Pinselspur"));
 
@@ -20,6 +21,14 @@ function App() {
           element={
             <Suspense fallback={<div className="text-white">Loading...</div>}>
               <Pinselspur />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/repnote"
+          element={
+            <Suspense fallback={<div className="text-white">Loading...</div>}>
+              <Repnote />
             </Suspense>
           }
         />
