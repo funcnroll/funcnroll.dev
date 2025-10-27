@@ -88,13 +88,14 @@ function RepNote() {
           <ProjectH3>Data Visualization</ProjectH3>
 
           <ProjectUl>
-            <ProjectLi icon="chart">
-              Volume (muscle distributon via radar chart, weekly sets and reps )
+            <ProjectLi>
+              Volume (muscle distributon via radar chart, weekly sets, reps and
+              weight )
             </ProjectLi>
-            <ProjectLi icon="chart">
-              Performance (strength trends and estimated 1RMs)
+            <ProjectLi>
+              Performance (Estimated 1RMs and total training volume)
             </ProjectLi>
-            <ProjectLi icon="chart">
+            <ProjectLi>
               Consistency (adherence, completed sets and session time)
             </ProjectLi>
           </ProjectUl>
