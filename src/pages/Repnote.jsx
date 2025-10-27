@@ -90,7 +90,7 @@ function RepNote() {
           <ProjectUl>
             <ProjectLi>
               Volume (muscle distributon via radar chart, weekly sets, reps and
-              weight )
+              weight)
             </ProjectLi>
             <ProjectLi>
               Performance (Estimated 1RMs and total training volume)
