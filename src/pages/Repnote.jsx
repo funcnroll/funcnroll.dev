@@ -33,10 +33,11 @@ function RepNote() {
               Github
             </GeneralLink>
           </div>
-          Repnote is a minimalist training log and dashboard, styled to feel
-          like a mobile app. It brings together your workouts, templates, and
-          history in one place, with everything connected so progress feels
-          clear and effortless.
+          RepNote is a minimalist training log and dashboard, styled to feel
+          like a mobile app. Its primary focus is on{" "}
+          <strong>data visualisation</strong>. It brings together your workouts,
+          templates, and history in one place, with everything connected so
+          progress feels clear and effortless.
         </ProjectParagraph>
 
         <ProjectCenter>
