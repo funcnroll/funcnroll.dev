@@ -12,30 +12,38 @@ function GetInTouch() {
   const domain = "funcnroll.dev";
   const email = `${user}@${domain}`;
 
+  const links = [
+    {
+      to: "https://github.com/funcnroll",
+      icon: <GithubIcon size={32} />,
+      text: "funcnroll",
+    },
+    {
+      to: "https://x.com/funcnroll",
+      icon: <XIcon size={32} />,
+      text: "@funcnroll",
+    },
+    {
+      to: `mailto:${email}`,
+      icon: <Mail size={32} />,
+      text: email,
+    },
+  ];
+
   return (
     <Section>
       <Header>Get in Touch</Header>
 
       <div className="flex flex-col items-start gap-4 sm:items-center sm:space-y-4">
-        <div>
+        {links.map((link, index) => (
           <GetInTouchLinks
-            to="https://github.com/funcnroll"
-            icon={<GithubIcon size={32} />}
-            text="funcnroll"
+            key={index} // 🔑 important here
+            to={link.to}
+            icon={link.icon}
+            text={link.text}
           />
-        </div>
-        <div>
-          <GetInTouchLinks
-            to="https://x.com/funcnroll"
-            icon={<XIcon size={32} />}
-            text="@funcnroll"
-          />
-        </div>
-        <GetInTouchLinks
-          to={`mailto:${email}`}
-          icon={<Mail size={32} />}
-          text={email}
-        />
+        ))}
+
         <GeneralLink to="https://github.com/funcnroll/funcnroll.dev">
           PS: This site is open source on Github
         </GeneralLink>

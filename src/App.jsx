@@ -5,12 +5,14 @@ import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { lazy, Suspense } from "react";
 import Repnote from "./pages/Repnote";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Pinselspur = lazy(() => import("./pages/Pinselspur"));
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
