@@ -11,6 +11,7 @@ import ShikiHighlighter, {
   createHighlighterCore,
   createJavaScriptRegexEngine,
 } from "react-shiki/core";
+import ProjectLinks from "../components/reusable/project/ProjectLinks";
 
 const highlighter = await createHighlighterCore({
   themes: [import("@shikijs/themes/one-dark-pro")],
@@ -96,17 +97,14 @@ function Pinselspur() {
         <PageNavigation to="/">Back</PageNavigation>
         <ProjectH1>Pinselspur</ProjectH1>
         <ProjectH2>A Client Project</ProjectH2>
+        <ProjectLinks
+          links={[{ label: "Live Site", url: "https://pinselspur.com" }]}
+        />
 
         <ProjectParagraph extraClass="mt-3">
-          <GeneralLink
-            weight="medium"
-            to="https://pinselspur.com"
-          >
-            Pinselspur
-          </GeneralLink>{" "}
-          is a custom-built website for an oil painter to showcase and sell
-          commissions. It’s a fully functional ordering system designed to
-          respect aesthetics and usability, powered by a maintainable and
+          Pinselspur is a custom-built website for an oil painter to showcase
+          and sell commissions. It’s a fully functional ordering system designed
+          to respect aesthetics and usability, powered by a maintainable and
           modular architecture.
         </ProjectParagraph>
 
@@ -164,6 +162,14 @@ function Pinselspur() {
           >
             {buttonCode}
           </ShikiHighlighter>
+        </div>
+        <div className="pb-6 mt-8 text-center">
+          <PageNavigation
+            size="xl"
+            to="/"
+          >
+            ← Back to Projects
+          </PageNavigation>
         </div>
       </div>
     </div>

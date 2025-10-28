@@ -7,6 +7,7 @@ import ProjectH1 from "../components/reusable/project/ProjectH1";
 import ProjectH2 from "../components/reusable/project/ProjectH2";
 import ProjectCenter from "../components/reusable/project/ProjectCenter";
 import PageNavigation from "../components/reusable/PageNavigation";
+import ProjectLinks from "../components/reusable/project/ProjectLinks";
 
 function RepNote() {
   return (
@@ -17,22 +18,14 @@ function RepNote() {
         <ProjectH1>RepNote</ProjectH1>
         <ProjectH2>Training Log &amp; Performance Dashboard</ProjectH2>
 
+        <ProjectLinks
+          links={[
+            { label: "Live Demo", url: "https://repnotedemo.funcnroll.dev" },
+            { label: "Github", url: "https://github.com/funcnroll/repnote" },
+          ]}
+        />
+
         <ProjectParagraph extraClass="mt-3">
-          <div className="mb-2">
-            <GeneralLink
-              weight="medium"
-              to="https://repnotedemo.funcnroll.dev"
-            >
-              Live Demo
-            </GeneralLink>{" "}
-            ·{" "}
-            <GeneralLink
-              weight="medium"
-              to="https://github.com/funcnroll/repnote"
-            >
-              Github
-            </GeneralLink>
-          </div>
           RepNote is a minimalist training log and dashboard, styled to feel
           like a mobile app. Its primary focus is on{" "}
           <strong>data visualisation</strong>. It brings together your workouts,
@@ -63,19 +56,14 @@ function RepNote() {
 
         <ProjectCenter>
           <ProjectH3>Preview</ProjectH3>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="">
             <img
-              src="/repnotepreview1.png"
-              alt="Training Volume visualization with radar chart and bar chart"
-              className="border border-gray-700 shadow-lg rounded-xl"
-            />
-            <img
-              src="/repnotepreview2.png"
-              alt="Workout History showing logged sessions"
-              className="border border-gray-700 shadow-lg rounded-xl"
+              src="/repnotemockup.png"
+              alt="Training Volume visualization with radar chart and bar chart, and workout history showing logged sessions"
+              className="border border-gray-700 shadow-lg w rounded-xl"
             />
           </div>
-          <ProjectParagraph extraClass="mt-2">
+          <ProjectParagraph extraClass="mt-2 ">
             RepNote combines detailed training insights (radar charts,
             performance metrics) with a clean workout history log.{" "}
             <GeneralLink to="https://github.com/funcnroll/repnote">
@@ -186,6 +174,14 @@ function RepNote() {
             <ProjectLi icon="arrow">Recharts</ProjectLi>
           </ProjectUl>
         </ProjectCenter>
+      </div>
+      <div className="pb-6 mt-8 text-center">
+        <PageNavigation
+          size="xl"
+          to="/"
+        >
+          ← Back to Projects
+        </PageNavigation>
       </div>
     </div>
   );
